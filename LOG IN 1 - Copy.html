@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Aamchi Mumbai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 35px;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-frame {
+      width: 40vh;
+      height: 88vh;
+      background-color: #000;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+    }
+
+   /* Header Bar */
+   .header-bar {
+      background-color: #000000;
+      height: 3vh;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    .header-bar .icons {
+      display: flex;
+      gap: 8px;
+    }
+
+
+    /* Background Image */
+    .background-image {
+      width: 360px;
+      height: 430px;
+      position: absolute;
+      top: 36px; /* Below the status bar */
+    }
+
+    /* Taxi Image */
+    .taxi-image {
+      position: absolute;
+      bottom: 136px;
+      left: 6px;
+      width: 80px; /* Adjust width */
+      height: 35px; /* Adjust height */
+      cursor: pointer;
+      transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    /* Welcome Text */
+    .welcome-text {
+      position: absolute;
+      bottom: 95px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+        /* Welcome Text */
+        .aamchi-text {
+      position: absolute;
+      bottom: 60px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-frame">
+    <!-- Header Bar -->
+    <div class="header-bar">
+        <span>10:29</span>
+        <div class="icons">
+          <span>🔊</span>
+          <span>WiFi</span>
+          <span>55%</span>
+          <span>🔋</span>
+        </div>
+      </div>
+    <!-- Background Image -->
+    <img class="background-image" src="images/mumbai.jpg" height="800px" width="360px">
+
+    <!-- Taxi Image -->
+    <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/home.html">
+    <img class="taxi-image" src="images/11907fe8092563ea5e22ecaf1a48a166-01.png" alt="Taxi">
+
+    <!-- Welcome Text -->
+    <div class="welcome-text" > YOU ARE</div>
+         <div class="aamchi-text"> READY!</div>
+  </div>
+</body>
+</html>

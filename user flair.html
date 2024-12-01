@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Flair Page final</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+        .frame {
+            height: 88vh;
+            width: 40vh;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        background-color: #000;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 30px;
+        }
+
+        .black-row {
+            width: 100%;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 16px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+        }
+        .form-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .user-flair-input {
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border-style: solid;
+            border-color: #fff5e5;
+            border-width: 2px;
+            border-radius: 25px;
+            border: none;
+            background-color: #000000;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+        .avatar-circle {
+            width: 80px;
+            height: 80px;
+            background-color: #d3d3d3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family:'Roboto', sans-serif; 
+            color: #fff5e5;
+        }
+
+        h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family:'Roboto', sans-serif; 
+            color: #fff5e5;
+        }
+
+
+        /* Overlay styles (inside frame) */
+        .overlay {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            width: 90%;
+            height: 60%;
+            background-color: #000000;
+            border: 2px solid #fff5e5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1000;
+        }
+        .overlay-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .avatar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .avatar-grid .avatar-item {
+            width: 60px;
+            height: 60px;
+            background-color: #d3d3d3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .avatar-grid .avatar-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .close-overlay {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffdb11;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container .btn-next {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 100px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffdb11;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <!-- Top Black Bar -->
+        <div class="black-row" style="display: flex; margin-top: 4px;">
+            <span>10:29</span>
+            <div class="icons">
+              <span>🔊</span>
+              <span>WiFi</span>
+              <span>55%</span>
+              <span>🔋</span>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="form-container">
+            <br>
+            <br>
+            <br>
+            <h2>User Flair</h2>
+            <div>
+                <input type="text" class="user-flair-input" placeholder="user flair" style=" border-style: solid;
+                border-color: #fff5e5; border-width: 2px;  color: #fff;">
+            </div>
+            <br>
+            <br>
+            <h2>Choose Avatar</h2>
+            <div class="avatar-circle" id="mainAvatarCircle">
+                <img id="mainAvatarImg" src="images/default.png" alt="images/default.png">
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <h3>Choose Your Avatar</h3>
+                <div class="avatar-grid">
+                    <div class="avatar-item" onclick="selectAvatar('images/2.png')">
+                        <img src="images/2.png" alt="Avatar 1">
+                    </div>
+                    <div class="avatar-item" onclick="selectAvatar('images/1.png')">
+                        <img src="images/1.png" alt="Avatar 2">
+                    </div>
+                    <div class="avatar-item" onclick="selectAvatar('images/3.png')">
+                        <img src="images/3.png" alt="Avatar 3">
+                    </div>
+                    <div class="avatar-item" onclick="selectAvatar('images/5.png')">
+                        <img src="images/5.png" alt="Avatar 4">
+                    </div>
+                    <div class="avatar-item" onclick="selectAvatar('images/6.png')">
+                        <img src="images/6.png" alt="Avatar 5">
+                    </div>
+                    <div class="avatar-item" onclick="selectAvatar('images/4.png')">
+                        <img src="images/4.png" alt="Avatar 6">
+                    </div>
+                </div>
+                <button class="close-overlay" id="closeOverlay">Close</button>
+            </div>
+        </div>
+
+        <div class="form-container ">
+            <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/interests%202.html"> <button class="btn-next" style="margin-top: 20px;">Next</button></a>
+       
+
+        <!-- Bottom Black Bar -->
+      
+
+     <div class="black-row" style="display: flex; padding-bottom: 16px;">
+        <div class="nav-item" style=" padding-left: 30px;">
+            <img src="images/lines.png" alt="" srcset="" style="height: 14.6px;">
+        </div>
+        <div class="nav-item" >
+            <img src="images/centre.png" alt="" srcset="" style="height: 14.6px;">
+        </div>
+        <div class="nav-item"  style="padding-right: 32px;">
+            <img src="images/back.png" alt="" srcset="" style="height: 14.6px;">
+             </div>
+ </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Get elements
+        const mainAvatarCircle = document.getElementById('mainAvatarCircle');
+        const mainAvatarImg = document.getElementById('mainAvatarImg');
+        const overlay = document.getElementById('overlay');
+        const closeOverlay = document.getElementById('closeOverlay');
+
+        // Open overlay on click
+        mainAvatarCircle.addEventListener('click', () => {
+            overlay.style.display = 'block';
+        });
+
+        // Close overlay on clicking the close button
+        closeOverlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
+
+        // Close overlay on clicking outside
+        overlay.addEventListener('click', (event) => {
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+            }
+        });
+
+        // Function to select an avatar
+        function selectAvatar(imageUrl) {
+            mainAvatarImg.src = imageUrl; // Update main avatar image
+            overlay.style.display = 'none'; // Close overlay
+        }
+    </script>
+</body>
+</html>
+

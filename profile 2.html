@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Layout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+
+        .black-row {
+            width: 100%;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 28px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+        }
+
+        .frame {
+            height: 88vh;
+            width: 40vh;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        background-color: #000;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 30px;
+    
+        }
+        h2 {
+            font-size: 16px;
+            font-family:'Roboto', sans-serif; 
+            color: #fff5e5;
+        }
+
+        h3{
+            font-size: 12px;
+            font-family:'Roboto', sans-serif; 
+            color: #fff5e5;
+            font-weight: 400;
+        }
+
+  
+ 
+
+
+
+
+  </style>
+</head>
+<div class="frame" style="margin: 10px;">
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4;">
+
+  <div style="height: 88vh; width: 40vh; background-color: rgb(0, 0, 0); border: 1px solid #ccc; overflow: hidden; display: flex; flex-direction: column; padding: 0px; ">
+    
+    <!-- Top bar -->
+    <div class="black-row" style="display: flex;">
+      <span>10:29</span>
+      <div class="icons">
+        <span>🔊</span>
+        <span>WiFi</span>
+        <span>55%</span>
+        <span>🔋</span>
+      </div>
+  </div>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px; margin-left: 10px; margin-right: 10px;">
+   <div style="height: 40px; width: 40px; border-radius: 50%; background-color: #ffdb11; object-fit: cover; overflow: hidden;"><img src="images/5.png" alt="Profile Image" style="height: 100%; width: 100%; object-fit: cover;">
+  </div>
+      <div style="flex-grow: 1; margin-left: 12px; background-color:  #ffdb11; height: 40px; border-radius: 25px; margin-right: 4px;padding-left: 20px; padding-top: 8px; font-family:'Roboto', sans-serif; font-size: 16px; font-weight: 700;">I.am.a.queen</div>
+      <div style="height: 30px; width: 30px; background-color: #000000; margin-left: 10px; border-radius: 3px;"><img src="images/options.png" alt="" srcset=""></div>
+    
+    </div>
+
+    <!-- Buttons -->
+    <div style="display: flex; justify-content: space-between; margin-bottom: 10px; padding-top: 5px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px;  margin-left: 10px; margin-right: 10px;">
+      <div style="background-color: #ffb811; color: rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px; font-size: 12px; width: 135px; height: 30px; font-family:'Roboto', sans-serif; font-size: 14px; font-weight: 700;text-align: center;">i_m_chapri</div>
+      <div style="background-color: #ffb811; color: rgb(0, 0, 0); padding: 5px 20px; border-radius: 5px; font-size: 12px; width: 135px; height: 30px; font-family:'Roboto', sans-serif; font-size: 14px; font-weight: 700; text-align: center;">147k</div>
+    </div>
+
+    <!-- Rewards badge -->
+    <div style="background-color: #ffeb3b; padding: 0px; padding-top: 5px; padding-left: 10px; border-radius: 5px; margin-bottom: 10px; text-align: left; font-size: 12px; margin-left: 18px; margin-right: 12px; width: 135px; height: 25px;font-family:'Roboto', sans-serif;font-weight: 500;">Rewards Badges</div>
+
+    <!-- Blue blocks -->
+    <div style="display: flex;justify-content: space-between; margin-bottom: 10px; padding-left: 10px; padding-right: 12px; padding-top: 5px;  margin-left: 10px; margin-right: 10px; ">
+      <div style="background-color: #fff5e5; width: 22%; height: 50px; border-radius: 5px;"><img src="images/award 1.png" alt="" srcset="" style="width: 50px; padding-left: 9px; padding-top: 4px;"></div>
+      <div style="background-color: #fff5e5; width: 22%; height: 50px; border-radius: 5px;"><img src="images/award 2.png" alt="" srcset="" style="width: 50px; padding-left: 10px; padding-top: 6px;"></div>
+      <div style="background-color: #fff5e5; width: 22%; height: 50px; border-radius: 5px;"><img src="images/award 3.png" alt="" srcset="" style="width: 50px; padding-left: 10px; padding-top: 6px;"></div>
+      <div style="background-color: #fff5e5; width: 22%; height: 50px; border-radius: 5px;"><img src="images/award 4.png" alt="" srcset="" style="width: 50px; padding-left: 10px; padding-top: 5px;"></div>
+    
+    </div>
+
+    <!-- Content area -->
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding-top: 10px; padding-left: 10px; padding-right: 10px;  margin-left: 10px; margin-right: 10px;">
+      <div style="height: 30px; width: 30px; border-radius: 50%; background-color:#ffdb11; object-fit: cover; overflow: hidden;"><img src="images/5.png" alt="Profile Image" style="height: 100%; width: 100%; object-fit: cover;"></div>
+      <div style="flex-grow: 1; margin-left: 12px; background-color:  #ffdb11; height: 40px; border-radius: 25px; margin-right: 4px;padding-left: 20px; padding-top: 8px; font-family:'Roboto', sans-serif; font-size: 16px; font-weight: 700;">I.am.a.queen</div>
+    </div>
+    <div style="flex-grow: 1; margin-left: 15px; background-color:  #000000; height: 40px; border-radius: 0px; padding-left: 20px; padding-top: 15px; margin-right: 15px;border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;margin-top: 10px; margin-bottom: 10px; border-style: solid;border-color: #ffdb11;  border-width: 2px; color: #fff5e5; padding-right: 22px; ">
+      <h2>Your posts</h2>
+      <p> <h3> Hello, book lovers. We are meeting this saturday for an exciting book reading and exchange session. We would love to see you there!  Let's dive into great stories, share insights, and connect over our love for reading. Don’t forget to bring your thoughts (and snacks)! See you there!"
+        Venue: Veer Savarkar Graden, Borivali.
+        Timing: 4:00 pm.
+ <p>Day & Date: 7th December, Sunday.  Hoping to see you there</p>
+
+      </h3></p>
+    </div>
+     
+   
+
+    <!-- Bottom navigation -->
+    <div class="black-row" style="height: 62px; display: flex; align-content: end; position: sticky;">
+      <div class="nav-item">
+          <img src="images/home.png" alt="" srcset="">
+      </div>
+      <div class="nav-item 2">
+          <img src="images/search.png" alt="" srcset="">
+      </div>
+      <div class="nav-item 2">
+          <img src="images/calender.png" alt="" srcset="">
+      </div>
+      <div class="nav-item 2">
+          <img src="images/saved.png" alt="" srcset="">
+      </div>
+      <div class="nav-item 2">
+          <img src="images/profile.png" alt="" srcset="">
+      </div>
+</div>
+
+<div class="black-row" style="display: flex; padding-bottom: 12px; align-items: end; position: sticky;">
+  <div class="nav-item" style=" padding-left: 30px;">
+      <img src="images/lines.png" alt="" srcset="" style="height: 12px;">
+  </div>
+  <div class="nav-item" >
+      <img src="images/centre.png" alt="" srcset="" style="height: 12px;">
+  </div>
+  <div class="nav-item"  style="padding-right: 32px;">
+      <img src="images/back.png" alt="" srcset="" style="height: 12px;">
+  </div>
+</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

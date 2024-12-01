@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Aamchi Mumbai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+ body {
+      margin: 35px;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-frame {
+      width: 40vh;
+      height: 88vh;
+      background-color: #000;
+      border: 2px solid #ffffff;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+    }
+
+     /* Header Bar */
+     .header-bar {
+      background-color: #000000;
+      height: 3vh;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    .header-bar .icons {
+      display: flex;
+      gap: 8px;
+    }
+
+
+      /* Background Image */
+      .background-image {
+      width: 360px;
+      height: 430px;
+      position: absolute;
+      top: 36px; /* Below the status bar */
+    }
+
+    /* Taxi Image */
+    .taxi-image {
+      position: absolute;
+      bottom: 137px;
+      left: 6px;
+      width: 80px; /* Adjust width */
+      height: 35px; /* Adjust height */
+    }
+
+
+
+    /* Hello Text */
+    .hello-text {
+      position: absolute;
+      top: 70px;
+      width: 65%;
+      text-align: center;
+      color: #000000;
+      font-size: 47px;
+      font-weight: bold;
+    }
+
+    .buttons {
+  position: absolute;
+  bottom: 28px;
+  width: 55%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Space between buttons */
+  
+}
+
+.buttons button {
+  background-color: #FFD700;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 11px 30px;
+  cursor: pointer;
+  width: 45%; /* Adjust button width */
+  height: 40px;
+  text-align: center;
+  margin-left: 130px;
+  margin-top: 3px;
+  margin-bottom: 3px ;
+ 
+}
+
+  </style>
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="phone-frame">
+      <!-- Header Bar -->
+      <div class="header-bar">
+          <span>10:29</span>
+          <div class="icons">
+            <span>🔊</span>
+            <span>WiFi</span>
+            <span>55%</span>
+            <span>🔋</span>
+          </div>
+        </div>
+
+    <!-- Background Image -->
+    <img class="background-image" src="images/mumbai.jpg" alt="Mumbai Background">
+
+    <!-- Taxi Image -->
+    <img class="taxi-image" src="images/11907fe8092563ea5e22ecaf1a48a166-01.png" alt="Taxi">
+
+    <!-- Hello Text -->
+    <div class="hello-text">Hello!</div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/LOG%20IN%203.html"><button>LogIn</button></a>
+      <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/SIGN%20IN%203.html"><button>SignUp</button></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+/* body {
+      margin: 0;
+      padding: 0;
+      width: 40vh;
+      height: 88vh;
+      background-color: #f5f5f5;
+    }
+
+    /* Frame and container styling */
+    /* .frame {
+      display: flex;
+      flex-direction: column;
+      width: 40vh;
+      height: 88vh;
+      background-color: rgb(0, 0, 0);
+      border: 1px solid #ccc;
+    } */ 
+
+    body {
+      margin: 35px;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+/* Header Bar */
+.header-bar {
+      background-color: #000000;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+ /* Phone Frame */
+ .phone-frame {
+      background-color: #121212;
+      color: #fff;
+      height: 88vh;
+      width: 40vh;
+      margin: auto;
+      border: 5px solid #000;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; /* Prevents content from overflowing */
+    }
+
+.black-row {
+            width: 100%;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 16px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+        }
+
+        
+/* Bottom Navigation Bar */
+        .nav-bar {
+      background-color: black;
+      height: 62px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 55px;
+      
+      
+    }
+
+/* Cards */
+    .card-container {
+      width: 360px;
+      height: 800px;
+     overflow-y: scroll;
+      scroll-behavior: smooth;
+    
+    }
+
+    .card {
+      background-color: #251F28;
+      border: none;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+     ;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 10px;
+      color: white;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: regular;
+      margin-bottom: 5px;
+    }
+
+    .card-text {
+      font-size: 12px;
+      color: #cccccc;
+    }
+
+    content {
+      flex-grow: 1;
+      padding: 25px;
+      
+    
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+    }
+
+    .btn {
+      background-color: #D9D9D9;
+      border-radius: 35px;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      height: 40px;
+     
+      
+      
+    }
+
+</style>
+<body>
+
+  <!-- Phone Frame -->
+  <div class="phone-frame">
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <span>10:29</span>
+    <div class="icons">
+      <span>🔊</span>
+      <span>WiFi</span>
+      <span>55%</span>
+      <span>🔋</span>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <div class="container row mt-1" style="height:6vh;">
+    <div class="col-1 mt-1 class=" rounded-5 border-0 h-75 m-auto bg-secondary-subtle >
+
+
+
+
+        <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/home.html"><img src="images/back (1).png" alt="Backbutton" style="margin-right: 5px"></a>
+      
+    </div>
+    <div class="col-10">
+      <h2 class="text-white" style="color: #FFFBF4; font-weight: bold;">Blogs</h2>
+  </div>
+</div>
+<br>
+
+
+
+<!-- Card 1 -->
+<div class="content">
+  <div class="btn-container">
+      <div class="card" style="margin-top: -8px; ">
+        <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/BLOG%20PAGE%202.html">
+            <img class="mumbai" src="images/SPEAK MUMBAI.jpg" alt="mumbai">
+          <div class="card-body">
+            <div class="card-title">Mumbai Made Easy</div>
+            <div class="card-text">Ultimate survival kit for you!</div>
+          </div>
+        </div>
+      </div>
+     
+    
+
+<!-- Card 2 -->
+   <div class="card" style="margin-bottom: 5%;">
+      <img src="images/BOLLYWOOD TOUR.jpg" alt="Izumi">
+      <div class="card-body">
+        <div class="card-title">From Broadway to Bollywood </div>
+        <div class="card-text">A Guide to Mumbai's Theater Scene</div>
+      </div>
+    </div>
+</div>
+
+
+
+
+  
+  <!-- Footer -->
+  <div class="nav-bar" style="position: sticky; ">
+    <div class="nav-item">
+      <img src="images/home.png" alt="Home">
+    </div>
+  <div class="nav-item">
+        <img src="images/search.png" alt="Search">
+    </div>
+  <div class="nav-item">
+      <img src="images/calender.png" alt="Calendar">
+    </div>
+  <div class="nav-item">
+        <img src="images/saved.png" alt="Group">
+    </div>
+  <div class="nav-item">
+          <img src="images/profile.png" alt="Profile">
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="black-row" style="display: flex;margin-top: 0px; position: sticky;">
+    <div class="nav-item" style=" padding-left: 30px;">
+        <img src="images/lines.png" alt="" srcset="" style="height: 12px;">
+    </div>
+    <div class="nav-item" >
+        <img src="images/centre.png" alt="" srcset="" style="height: 12px;">
+    </div>
+    <div class="nav-item"  style="padding-right: 32px;">
+        <img src="images/back (1).png" alt="" srcset="" style="height: 12px;">
+    </div>
+</div>
+
+</body>
+</html>

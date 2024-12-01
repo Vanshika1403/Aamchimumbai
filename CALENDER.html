@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Low Fidelity Wireframe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Frame Settings */
+        body {
+            margin: 0;
+            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .frame {
+            width: 40vh;
+            height: 88vh;
+            border: 1px solid black;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* Prevent scrolling */
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+
+        /* Header Bar */
+    .header-bar {
+      background-color: #000000;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            height: 6%; /* Reduced navbar height */
+        }
+
+        .profile-circle {
+            width: 40px; /* Reduced size */
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 50%;
+            overflow: hidden; /* Ensures the image stays within the circle */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        }
+        .profile-circle img {
+      width: 120%;
+      height: 135%;
+      object-fit: cover; /* Ensures the image fits perfectly without stretching */
+    }
+
+        /* Content Section */
+        .content {
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 2px 0;
+            text-align: left;
+        }
+
+        /* Popular/Recent Events Section */
+        .popular-events {
+            height: 120px;
+            border-radius: 8px;
+            border-style: solid;
+            border-color: #FFF5E5;
+            position: relative;
+            overflow: hidden; /* Ensures the image stays within the rounded rectangle */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .Popular-card {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            font-size: 12px;
+            color: #333;
+            text-align: left;
+        }
+
+        .popular-card span {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            font-size: 12px;
+            color: #333;
+            text-align: left;
+        }
+        .popular-section img {
+            width: 100%;/* Fit width */
+            height: 100%;/* Fit height */
+            object-fit: contain;}
+        
+
+        .dots {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 4px;
+        }
+
+        .dot {
+            width: 5px;
+            height: 5px;
+            background-color: #aaa;
+            border-radius: 50%;
+        }
+
+        /* Event Cards */
+        .event-cards {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            gap: 5px;
+            margin-top: 0px; /* Reduce space between the date and card */
+        }
+
+          /* Event Cards */
+        .event-cards {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            gap: 10px;
+            
+        }
+
+        .event-card {
+            flex: 1;
+            height: 80px;
+            width:50px;
+            border-style: solid;
+            border-color: #FFF5E5;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-top: 10px;
+            
+        }
+
+        .event-card span {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            font-size: 12px;
+            color: #333;
+            text-align: left;
+        }
+        .event-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;}
+    
+
+        /* Calendar */
+        .calendar {
+            margin: top 0px;
+            padding-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+            position: relative;
+       
+    
+            border-radius: 8px;
+            padding: 5px;
+            padding-bottom: 0px;
+            height: 60%;
+    
+        }
+
+        .calendar table {
+            width: 100%;
+            border-spacing: 5px;
+            color: #FFF5E5;
+        height: 20px;
+        }
+
+        .calendar td {
+            height: 5px;
+            width: 15px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+
+        .calendar td.active {
+            width: 05px; 
+            height: 03px;
+            background-color: #FFB200;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+
+        /* Bottom Navigation */
+        .nav-bar{
+background-color: black;
+height: 62px;
+width: 40vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 0%;
+padding-bottom: 0px;
+ }
+ .black-row {
+            width: 40vh;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 16px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0px;
+      padding-bottom: 40px;
+      padding-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="phone-frame">
+            <!-- Header Bar -->
+            <div class="header-bar">
+                <span>10:29</span>
+                <div class="icons">
+                  <span>🔊</span>
+                  <span>WiFi</span>
+                  <span>55%</span>
+                  <span>🔋</span>
+                </div>
+              </div>
+
+         <!-- Navbar -->
+    <div class="navbar">
+        <div class="profile-circle">
+            <img src="images/5.png" >
+
+        </div>
+        <span style="font-size: 16px; color: #FFF5E5; text-align: left; padding-right: 50px; margin-right: 100px;">Vadapav Girl</span>
+        </div><div class="menu-icon"></div>
+    </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Popular Events -->
+            <h6 style="font-size: 15px; color: #FFF5E5; text-align: left; margin-top: 0px ;">Popular Events</h6>
+            <div class="popular-events ">
+                 <img src="images/55333.png">
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <!-- Events for 5th October -->
+            <h6 style="font-size: 12px; color: #FFF5E5; text-align: left; margin-bottom: 02
+            px; padding-bottom: 0px; margin-top: 10px;">5th November</h6>
+            <div class="event-cards">
+                <div class="event-card" style="border-radius: 8px;">
+                    <span style="font-size: 12px; text-align: left; padding: 2px 5px; color: #FFF5E5;">Marathon</span>
+                    <img src="images/marathon.jpeg">
+                </div>
+                <div class="event-card">
+                    <span style="font-size: 12px; text-align: left; padding: 2px 5px; color: #FFF5E5;">Pottery</span>
+                    <img src="images/Birth of Clouds_ Paul Fryman in process….jpeg">
+                </div>
+                <div class="event-card">
+                    <span style="font-size: 12px; text-align: left; padding: 2px 5px; color: #FFF5E5;"> Drinks Night</span>
+                    <img src="images/Cute drinks 🍹.jpeg">
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="calendar">
+                <h6 style="font-size: 11px; color:#FFF5E5; padding-left: 10px;">November, 2024</h6>
+                <table>
+                    <tr>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td class="active">5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="nav-bar" style="margin-top: -10%;">
+            <div class="nav-item">
+                <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/home.html"><img src="images/home.png" ></a>
+        
+            </div>
+            <div class="nav-item">
+                <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/EXPLORE%20PAGE.html"> <img src="images/search.png"></a>
+            </div>
+            <div class="nav-item">
+                <img src="images/calender.png">
+            </div>
+            <div class="nav-item">
+                <img src="images/saved.png">
+            </div>
+            <div class="nav-item">
+                <img src="images/profile.png">
+            </div>
+            
+        </div>
+        <div class="black-row" style="display: flex; margin-right: 10px; margin-bottom: -20px;">
+            <div class="nav-item" style=" padding-left: 30px;">
+                <img src="images/lines.png" alt="" srcset="" style="height: 12px;">
+            </div>
+            <div class="nav-item" >
+                <img src="images/centre.png" alt="" srcset="" style="height: 12px;">
+            </div>
+            <div class="nav-item"  style="padding-right: 32px;">
+                <img src="images/back.png" alt="" srcset="" style="height: 12px;">
+            </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

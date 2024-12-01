@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low Fidelity Frames</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+
+    /* body {
+      margin: 0;
+      padding: 0;
+      width: 40vh;
+      height: 88vh;
+      background-color: #f5f5f5;
+    }
+
+    /* Frame and container styling */
+    /* .frame {
+      display: flex;
+      flex-direction: column;
+      width: 40vh;
+      height: 88vh;
+      background-color: rgb(0, 0, 0);
+      border: 1px solid #ccc;
+    } */ 
+    body {
+      margin: 35px;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-frame {
+      width: 40vh;
+      height: 88vh;
+      background-color: #000;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    
+     
+      .header {
+      background-color: rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+      text-align: left;padding: 10px;font-size: 16px;font-weight:normal; padding-left: 20px;
+    margin-top: 0%}
+
+    .header span {
+      color: white;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 25px;
+      
+    
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+    }
+
+    .btn {
+      background-color: #D9D9D9;
+      border-radius: 35px;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      height: 40px;
+     
+      
+      
+    }
+
+    
+
+    .dark-section {
+      background-color: rgb(53, 53, 53);
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 30px;
+    }
+
+    /* Bottom navigation styling */
+    .nav-bar {
+      background-color: rgb(0, 0, 0);
+      height: 62px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: -12%;
+    }
+
+
+    .nav-dot {
+      width: 40px;
+      height: 40px;
+      background-color: #555;
+      border-radius: 50%;
+    }
+
+    /* Adjusting frame height */
+    .frame {
+      height: 800px;
+    }
+
+
+    /* Header Bar */
+    .header-bar {
+      background-color: #000000;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .black-row {
+            width: 100%;
+            height: 1vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 10px;
+            display: flex;
+            
+      justify-content: space-between;
+      align-items: center;
+        }
+
+        .card-container {
+      width: 360px;
+      height: 800px;
+     overflow-y: scroll;
+      scroll-behavior: smooth;
+    
+    }
+
+    .card {
+      background-color: #251F28;
+      border: none;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+     ;
+    }
+
+    .card img {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 10px;
+      color: white;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: regular;
+      margin-bottom: 5px;
+    }
+
+    .card-text {
+      font-size: 12px;
+      color: #cccccc;
+    }
+  </style>
+</head>
+
+<body>
+<!-- Second frame: Categories -->
+
+
+
+    <div class="phone-frame">
+        <!-- Header Bar -->
+        <div class="header-bar">
+            <span>10:29</span>
+            <div class="icons">
+              <span>🔊</span>
+              <span>WiFi</span>
+              <span>55%</span>
+              <span>🔋</span>
+            </div>
+          </div>
+  <div class="header">
+    <img src="images/back (1).png" alt="" style="margin-right: 5px;">
+    <span style="color: #FFFBF4; font-weight: bold;">CELEB SPOTS</span>
+<img src="IMAGES/filter.png" alt="" style="height: 15px; margin-left: 100px;">
+     
+  </div>
+  <div class="content">
+    <div class="btn-container">
+        <div class="card" style="margin-top: -8%;">
+            <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/TO%20DO%203.html">
+                <img class="image" src="images/Rectangle 63.png" alt="bastian">
+ 
+            <div class="card-body">
+            
+              <div class="card-title">BASTIAN</div>
+              <div class="card-text">Dadar, Shivaji Park</div>
+            </div>
+          </div>
+        </div>
+     <!-- Card 1 -->
+     <div class="card" style="margin-bottom: 5%; margin-top: -10%;">
+        <img src="IMAGES/izumi picture.png" alt="Izumi">
+        <div class="card-body">
+          <div class="card-title">IZUMI</div>
+          <div class="card-text">Bandra (west), Linking Road</div>
+        </div>
+      </div>
+
+
+      <div class="card" style="margin-bottom: 5%;">
+        <img src="images/restaurant.jpg" alt="Izumi">
+        <div class="card-body">
+          <div class="card-title">PHO</div>
+          <div class="card-text">Colaba, Fort</div>
+        </div>
+
+  </div>
+
+  
+
+  
+  <div class="nav-bar" style="margin-top: -5%">
+    <div class="nav-item">
+      <img src="IMAGES/home.png" style="height: 25px;">
+    </div>
+    <div class="nav-item">
+      <img src="IMAGES/Vector-1.png" alt="Bookmark" style="height: 25px;">
+    </div>
+    <div class="nav-item">
+      <img src="IMAGES/Vector-2.png" alt="Calendar" style="height: 25px;">
+    </div>
+    <div class="nav-item">
+      <img src="IMAGES/group.png" alt="Saved" style="height: 25px;">
+      </div>
+      <div class="nav-item">
+          <img src="IMAGES/Vector-3.png" alt="Profile" style="height: 25px;">
+
+    </div>
+      </div>
+      
+      <div class="black-row" style="display: flex; padding-bottom: 17px;">
+        <div class="nav-item" style=" padding-left: 30px;">
+            <img src="images/lines.png" alt="" srcset="" style="height: 12px;">
+        </div>
+        <div class="nav-item" >
+            <img src="images/centre.png" alt="" srcset="" style="height: 12px;">
+        </div>
+        <div class="nav-item"  style="padding-right: 32px;">
+            <img src="images/back.png" alt="" srcset="" style="height: 12px;">
+        </div>
+ 
+    </div>
+</div>
+<br>
+<br>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Low-Fidelity Frame</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+            margin: 0;
+            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    .frame {
+            width: 40vh;
+            height: 88vh;
+            border: 1px solid black;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* Prevent scrolling */
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+
+    /* Header Bar */
+    .header-bar {
+      background-color: #000000;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+        
+        
+        /* Profile and Tabs */
+        .profile-circle {
+            width: 65px;
+            height: 50px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 10px;
+            display: flex;
+      align-items: center;
+      justify-content: center;
+        }
+        .profile-circle img {
+      width: 120%;
+      height: 135%;
+      object-fit: cover; /* Ensures the image fits perfectly without stretching */
+    }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .tabs div {
+            color: gray;
+        }
+
+        .tabs .active {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Search Bars */
+        .search-bar {
+            background-color: #FFF5E5;
+            width: 40%;
+            height: 30px;
+            border-radius: 15px;
+            margin: 8px 10px;
+        }
+        button-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        .button-bar div {
+            background-color: #bbb;
+            width: 20%;
+            height: 20px;
+            border-radius: 10px;}
+
+        .small-search-bar {
+            width: 15%;
+            height: 15px;
+            background-color: #FFB200;
+            border-radius: 15px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        /* Board Items */
+        .board-item {
+            flex: 1;
+            border-style: solid;
+            border-color: #FFB200;
+            border-width: 1px; /* Adjust the thickness of the border */
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 90px;
+            width: 100%;
+        }
+        .board-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;}
+        
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 8px 10px;
+        }
+
+        /* Label Text */
+        .label-text {
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            margin-top: 8px;
+            text-align: left;
+        }
+
+        .subtext {
+            font-size: 10px;
+            color: gray;
+            font-weight: normal;
+            margin-top: 1px;
+        }
+
+        /* Bottom Navigation */
+        .nav-bar{
+background-color: black;
+height: 62px;
+width: 40vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 0px;
+margin-top: -30px;
+
+ }
+ .black-row {
+            width: 40vh;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 16px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0px;
+      margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <!-- Header Bar -->
+        <div class="header-bar">
+            <span>10:29</span>
+            <div class="icons">
+              <span>🔊</span>
+              <span>WiFi</span>
+              <span>55%</span>
+              <span>🔋</span>
+            </div>
+          </div>
+
+    <!-- Profile and Tabs -->
+    <div class="d-flex align-items-center">
+        <div class="profile-circle"> <img src="images/girl 21.png" ></div>
+        <div class="tabs w-100">
+            <div style="color: #FFF5E5; ">Pins</div>
+            <div class="active" style="color: #FFF5E5; ">Boards</div>
+            <div style="color: #FFF5E5; ">Collages</div>
+        </div>
+    </div>
+
+    <!-- Search and Button -->
+    <div class="d-flex align-items-center">
+        <div class="search-bar w-75" > <input type="text" placeholder="Search" style="width: 100%; margin-bottom: 20px; padding: 08px 12px 05px 15px; border: 1px solid #FFF5E5; border-radius: 120px; font-size: 14px; box-sizing: border-box;"></div>
+        </div>
+
+    <!-- Small Search Bars -->
+    <div class="d-flex justify-content-left px-2">
+        <div class="small-search-bar"></div>
+        <div class="small-search-bar"></div>
+        <div class="small-search-bar"></div>
+    </div>
+
+    <!-- Board Items -->
+    <div class="grid-container">
+        <!-- First Row -->
+        <div class="text-left">
+            <div class="board-item"> <img src="images/korean food.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5;font-size: 15px; ">Korean food</div>
+            <div class="subtext" style="color: #FFF5E5; ">20 events</div>
+            
+        </div>
+        
+        <div class="text-left">
+            <div class="board-item"> <img src="images/matcha.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5;font-size: 15px; ">Matcha cafes</div>
+            <div class="subtext" style="color: #FFF5E5; ">09 events</div>
+        </div>
+        
+        <!-- Second Row -->
+        <div class="text-left">
+            <div class="board-item"> <img src="images/sports.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5;font-size: 15px; ">sports</div>
+            <div class="subtext" style="color: #FFF5E5; ">08 events</div>
+        </div>
+        
+        <div class="text-left">
+            <div class="board-item"> <img src="images/board games.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5; font-size: 15px;">Board Game Club</div>
+            <div class="subtext" style="color: #FFF5E5; ">05 events</div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="text-left">
+            <div class="board-item"> <img src="images/sea1.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5;  font-size: 15px;">Beach</div>
+            <div class="subtext" style="color: #FFF5E5; ">06 events</div>
+            
+        </div>
+        
+        <div class="text-left">
+            <div class="board-item"> <img src="images/clubs.jpeg"></div>
+            <div class="label-text" style="color: #FFF5E5;  font-size: 15px; ">Clubs</div>
+            <div class="subtext" style="color: #FFF5E5; ">10 events</div>
+        </div>
+    </div>
+<!-- Bottom Navigation -->
+<div class="nav-bar" style="margin-top: -50px;">
+    <div class="nav-item">
+      <img src="images/home.png">
+    </div>
+    <div class="nav-item">
+      <img src="images/search.png" alt="Bookmark">
+    </div>
+    <div class="nav-item">
+      <img src="images/calender.png" alt="Calendar">
+    </div>
+    <div class="nav-item">
+      <img src="images/saved.png" alt="Saved">
+      </div>
+      <div class="nav-item">
+          <img src="images/profile.png" alt="Profile">
+
+    </div>
+  </div>
+  <div class="black-row" style="display: flex; margin-right: 10px;">
+      <div class="nav-item" style=" padding-left: 30px;">
+          <img src="images/lines.png" alt="" srcset="" style="height: 12px;">
+      </div>
+      <div class="nav-item" >
+          <img src="images/centre.png" alt="" srcset="" style="height: 12px;">
+      </div>
+      <div class="nav-item"  style="padding-right: 32px;">
+          <img src="images/back.png" alt="" srcset="" style="height: 12px;">
+      </div>
+    
+    </div>
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

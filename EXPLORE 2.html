@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+/* body {
+      margin: 0;
+      padding: 0;
+      width: 40vh;
+      height: 88vh;
+      background-color: #f5f5f5;
+    }
+
+    /* Frame and container styling */
+    /* .frame {
+      display: flex;
+      flex-direction: column;
+      width: 40vh;
+      height: 88vh;
+      background-color: rgb(0, 0, 0);
+      border: 1px solid #ccc;
+    } */ 
+
+    body {
+      margin: 35px;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+    
+    }
+
+/* Header Bar */
+.header-bar {
+      background-color: #000000;
+      color: #fff;
+      font-size: 12px;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+ /* Phone Frame */
+ .phone-frame {
+      background-color: #121212;
+      color: #fff;
+      height: 88vh;
+      width: 39.2vh;
+      margin: auto;
+      border: 5px solid #000;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; /* Prevents content from overflowing */
+    }
+
+.black-row {
+            width: 100%;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 16px;
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+        }
+
+ /* Search Bar */
+ .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    height: 7vh;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Adjust spacing as needed */
+    fill: white; /* Icon color */
+  }
+        
+/* Bottom Navigation Bar */
+        .nav-bar {
+      background-color: black;
+      height: 62px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 0%;
+    }
+
+</style>
+<body>
+
+  <!-- Phone Frame -->
+  <div class="phone-frame">
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <span>10:29</span>
+    <div class="icons">
+      <span>🔊</span>
+      <span>WiFi</span>
+      <span>55%</span>
+      <span>🔋</span>
+    </div>
+  </div>
+  
+  <!-- Search Bar -->
+  <div class="container bg-black row mx-auto mt-1" style="height:6vh;">
+    <div class="col-1 mt-1 class=" rounded-5 border-0 h-75 m-auto bg-secondary-subtle >
+        <a href="file:///C:/Users/Tanishka%20Shah/OneDrive/Desktop/bootstrap/EXPLORE%20PAGE.html"> <img src="Images/back.png" alt="Backbutton" style="margin-right: 5px"></a>
+    </div>
+    <div class="col-10">
+      <input type="text" name="search" class="rounded-5 border-0 h-75 mt-1 bg-secondary-subtle" id="search-bar" style="width: 200px; height: 20px;"> 
+    </div>
+  </div>
+    
+  <!-- Recomendation Bar -->
+      <div class="container row mx-auto bg-black" style="height: 4vh;">
+        <div class="container col mx-1 my-1 rounded-5 border-0 bg-warning" style="background-color: #FFDB11"></div>
+        <div class="container col mx-1 my-1 rounded-5 border-0 bg-Orange" style="background-color: #FFB200"></div>
+        <div class="container col mx-1 my-1 rounded-5 border-0 bg-cream" style="background-color: #FFF5E5"></div>
+        <div class="container col mx-1 my-1 rounded-5 border-0 bg-warning" style="background-color: #FFDB11"></div>
+      </div>
+
+  <!--Explore grids row 1-->
+  <div class="container row bg-black mx-auto mt-1 rounded-3 border-2"style="height:15vh; block-inline">
+    <div class="container mx-1 my-1 rounded-4 border bg-black">
+        <div class="d-flex justify-content-between" style="padding: 7px;">
+            <span>Events near me</span>
+            <span class="close-btn" style="cursor: pointer;">&times;</span>
+          </div>
+    </div>
+    <div class="container mx-1 my-1 rounded-4 border bg-black">
+        <div class="d-flex justify-content-between" style="padding: 7px;">
+            <span>Concerts</span>
+            <span class="close-btn" style="cursor: pointer;">&times;</span>
+          </div>
+    </div>
+  </div>
+
+  <!--Explore grids row 2-->
+  <div class="container row bg-black mx-auto mt-1 rounded-3 border-2"style="height:15vh; block-inline">
+    <div class="container mx-1 my-1 rounded-4 border bg-black">
+        <div class="d-flex justify-content-between" style="padding: 7px;">
+            <span>Mahavir Nagar Khau Gali</span>
+            <span class="close-btn" style="cursor: pointer;">&times;</span>
+          </div>
+    </div>
+    <div class="container mx-1 my-1 rounded-4 border bg-black">
+        <div class="d-flex justify-content-between" style="padding: 7px;">
+            <span>Museums</span>
+            <span class="close-btn" style="cursor: pointer;">&times;</span>
+          </div>
+    </div>
+  </div>
+
+  <!--EMPTY-Explore grids row 3-->
+  <div class="container row bg-black mx-auto rounded-3 border-0"style="height:12vh; block-inline"></div>
+
+  <!--EMPTY-Explore grids row 4-->
+  <div class="container row bg-black mx-auto mt-1 rounded-3 border-0"style="height:13vh; block-inline"></div>
+  
+  <!-- Footer -->
+ 
+
+</body>
+</html>
